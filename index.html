@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Antonia's CV</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <img class="selfie" src="img.jpeg" />
+
+      <div>
+        <h1>Antonia Roxana</h1>
+        <h2 id="job-title">Financial analyst @Alstom & future Web Developer</h2>
+      </div>
+     
+     
+      <p style="color: lightblue; text-align: right;">
+        <strong>Welcome</strong> to my site
+      </p>
+    </header>
+
+    <ul id="top-menu-bar">
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">Skills</a></li>
+      <li><a href="#">Known Languages</a></li>
+      <li><a href="#">Projects</a></li>
+    </ul>
+
+    <section id="content">
+      <div>
+        <div class="contact">
+          Contact 
+          <section>
+            <form action="">
+              <div>
+                <label for="subscriberEmail">Email</label>
+                <input
+                  type="email"
+                  required
+                  name="email"
+                  id="subcriberEmail"
+                  placeholder="your@email.com"
+                />
+              </div>
+
+              <button type="submit">Subscribe</button>
+            </form>
+          </section>
+
+          <section>
+            <div>
+              <label for="subscriber">Name:</label>
+              <input
+                type="text"
+                required
+                name="nume"
+                id="subscriber"
+                placeholder="Full Name"
+              />
+            </div>
+          </section>
+        </div>
+
+        <div class="homework">
+          Homework
+          <div>
+            <span class="dot"></span>        
+           </div>
+           
+           <div>
+            <table class="rubik-cube" style="height: 80px; width: 80px">
+              <tr">
+              <td class="partrubik1" style="background-color: red"></td>
+              <td class="partrubik2" style="background-color: white"></td>
+              <td class="partrubik3" style="background-color: yellow"></td>
+             </tr>
+     
+              <tr>
+              <td class="partrubik4" style="background-color: blue"></td>
+               <td class="partrubik5" style="background-color: blue"></td>
+              <td class="partrubik6" style="background-color: orange"></td>
+              </tr>
+     
+             <tr>
+              <td class="partrubik7" style="background-color: green"></td>
+              <td class="partrubik8" style="background-color: red"></td>
+              <td class="partrubik9" style="background-color: yellow"></td>
+              </tr>
+             </table>
+
+           </div>
+
+        </div>
+      </div>
+
+      <div id="main">
+        <div class="home">HOME</div>
+        <div class="page">
+          <h2>Skills</h2>
+
+          <ul>
+            <li class="favorite">HTML</li>
+            <li class="favorite">CSS</li>
+            <li>JS</li>
+          </ul>
+        </div>
+
+        <div class="page">
+          <h2>Known Languages</h2>
+          <table border="1">
+            <tr>
+              <th>Language</th>
+              <th>Level</th>
+            </tr>
+            <tr>
+              <td>Romanian</td>
+              <td>Native</td>
+            </tr>
+            <tr>
+              <td>English</td>
+              <td>Advanced</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <a
+        target="_blank"
+        href="https://www.linkedin.com/in/antonia-ciont-337007232"
+        >Linkedin</a
+      >
+    </footer>
+
+    <script src="index.js"></script>
+
+    <script>
+      console.info("page loaded");
+      console.debug(2 * 3 + 1);
+      2 * (3 + 1);
+
+      var employed = true;
+      console.error(employed);
+
+      var age = 24;
+
+      var user = "Matei";
+      console.info(user);
+      user = user + "Nicolae";
+      console.info(user);
+
+      var skills = ["html", "css", "js"];
+
+      var dan = {
+        age: 26,
+        employed: true,
+      };
+
+      var giulia = {
+        age: 24,
+        employed: true,
+      };
+    </script>
+  </body>
+</html>

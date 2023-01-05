@@ -24,10 +24,10 @@
     </header>
 
     <ul id="top-menu-bar">
-      <li><a href="#">HOME</a></li>
-      <li><a href="#">Skills</a></li>
-      <li><a href="#">Known Languages</a></li>
-      <li><a href="#">Projects</a></li>
+      <li><a href="#"onclick="displayHome()">HOME</a></li>
+      <li><a href="#" onclick="displaySkills()">Skills</a></li>
+      <li><a href="#" onclick="displayLanguages()">Known Languages</a></li>
+      <li><a href="#" onclick="displayProjects()">Projects</a></li>
     </ul>
 
     <section id="content">
@@ -98,18 +98,19 @@
       </div>
 
       <div id="main">
-        <div class="home">HOME</div>
-        <div class="page">
-          <h2>Skills</h2>
+        <div id="home" class="page">
+          <h2>Home</h2>
+          <p>Hi! Nice to meet you</p>
 
-          <ul>
-            <li class="favorite">HTML</li>
-            <li class="favorite">CSS</li>
-            <li>JS</li>
-          </ul>
         </div>
 
-        <div class="page">
+        <div id="skills" class="page">
+          <h2>Skills</h2>
+
+          <ul id="skills-list"></ul>
+        </div>
+
+        <div id="languages" class="page">
           <h2>Known Languages</h2>
           <table border="1">
             <tr>
@@ -122,9 +123,18 @@
             </tr>
             <tr>
               <td>English</td>
-              <td>Advanced</td>
+              <td>Proficient</td>
+            </tr>
+            <tr>
+              <td>Russian</td>
+              <td>So so</td>
             </tr>
           </table>
+        </div>
+
+        <div id="projects" class="page">
+          <h2>Projects</h2>
+
         </div>
       </div>
     </section>

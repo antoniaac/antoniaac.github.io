@@ -9,16 +9,10 @@ for (var i = 0; i < skills.length; i++) {
 }
 skillsEL.innerHTML = skillsHTML;
 
-var pageIds = ["home", "skills", "languages", "projects"];
-
 function hideAllPages() {
   var pages = document.querySelectorAll(".page");
   pages.forEach(function (page) {
-    console.info("inside for each", page.id);
     hide(page.id);
-  });
-  pageIds.forEach(function (pageId) {
-    hide(pageId);
   });
 }
 

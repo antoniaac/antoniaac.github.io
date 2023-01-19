@@ -135,6 +135,15 @@ td {
   background-color: #fff;
 }
 
+#skills-list li {
+  font-weight: bold;
+}
+
+#skills-list span {
+  color: gray;
+  font-weight: 200;
+}
+
 footer {
   text-align: center;
   background-color: #334455;

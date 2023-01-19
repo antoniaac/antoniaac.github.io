@@ -1,20 +1,17 @@
 var skillsEL = document.getElementById("skills-list");
 
 var skills = [
-  { nume: "HTML", endorcements: 5 },
+  { name: "HTML", endorcements: 5 },
   { name: "CSS", endorcements: 4 },
   { name: "JS", endorcements: 3 },
   { name: "Drive", endorcements: 2 },
 ];
 
-var skillsHTML = "";
-
-skills.forEach(function (skill) {
-  skillsHTML +=
-    "<li>" + skill[i].name + " - " + skill[i].endorcements + "</li>";
+var skillsHTML = skills.map(function (skill) {
+  return "<li>" + skill.name + " - " + skill.endorcements + "</li>";
 });
 
-skillsEL.innerHTML = skillsHTML;
+skillsEL.innerHTML = skillsHTML.join("");
 
 function hideAllPages() {
   var pages = document.querySelectorAll(".page");

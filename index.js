@@ -9,10 +9,11 @@ var skills = [
 
 var skillsHTML = "";
 
-for (var i = 0; i < skills.length; i++) {
+skills.forEach(function (skill) {
   skillsHTML +=
-    "<li>" + skills[i].name + " - " + skills[i].endorcements + "</li>";
-}
+    "<li>" + skill[i].name + " - " + skill[i].endorcements + "</li>";
+});
+
 skillsEL.innerHTML = skillsHTML;
 
 function hideAllPages() {
